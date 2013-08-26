@@ -1,0 +1,16 @@
+.:
+filelist.txt
+i386
+sabayon.menu
+sabayon.png
+x86_64
+
+./i386:
+sabayon
+sabayon.igz
+sabayonmain.menu
+
+./x86_64:
+sabayon
+sabayon.igz
+sabayonmain.menu

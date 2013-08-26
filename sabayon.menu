@@ -1,0 +1,14 @@
+MENU BEGIN SABAYON
+MENU LABEL ^Sabayon SpinBase 8.0
+# ------====> Include Menu Settings <====------
+MENU INCLUDE er/menuinc/header.module
+
+# ------====> Set Specific Page Settings <====------
+MENU BACKGROUND er/plugins/sabayon/sabayon.png
+
+MENU INCLUDE er/plugins/sabayon/i386/sabayonmain.menu
+MENU INCLUDE er/plugins/sabayon/x86_64/sabayonmain.menu
+  
+# ------====> Back <====------
+MENU INCLUDE er/menu/shared/menu-back.module
+MENU END

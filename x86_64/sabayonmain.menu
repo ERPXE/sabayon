@@ -1,0 +1,17 @@
+LABEL SABAYON64
+MENU LABEL ^Sabayon Live - x64
+KERNEL er/plugins/sabayon/x86_64/sabayon
+INITRD er/plugins/sabayon/x86_64/sabayon.igz
+APPEND loop=/image.squashfs root=/dev/ram0 init=/linuxrc looptype=squashfs doscsi console=tty1 vga=791 nfsroot=10.0.0.1:/tftpboot/er/shares/sabayon/x86_64/ cdroot=1 real_root=/dev/nfs aufs
+TEXT HELP
+                 Sabayon Live - x64.
+ENDTEXT
+
+LABEL SABAYONFB64
+MENU LABEL ^Sabayon Live - x64 Safe Mode
+KERNEL er/plugins/sabayon/x86_64/sabayon
+INITRD er/plugins/sabayon/x86_64/sabayon.igz
+APPEND loop=/image.squashfs root=/dev/ram0 init=/linuxrc looptype=squashfs doscsi console=tty1 vga=normal nfsroot=10.0.0.1:/tftpboot/er/shares/sabayon/x86_64/ cdroot=1 real_root=/dev/nfs aufs
+TEXT HELP
+                 Sabayon Live Safe Mode - x64.
+ENDTEXT
